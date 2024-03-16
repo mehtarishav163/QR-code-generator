@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(58, 56, 56);
+    display: inline;
+    text-align: center;
+}
+
+
+
+.container {
+    margin: 300px 0px 0px 700px;
+    width: 30%;
+    height: 500px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 61.5%;
+    height: 46px;
+    color: white;
+    background: rgb(6, 103, 184);
+    border: 2px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px 50px 0px 110px;
+}
+
+input {
+    background: white;
+    width: 60%;
+    height: 38px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 20px 0px 0px 110px;
+}
+
+.heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 25px;
+}
+
+#imgBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img {
+    width: 100%;
+    padding: 0px;;
+}
+
+
+#imgBox.show-img {
+    max-height: 300px;
+    margin: 30px auto;
+    border: 1px solid #d1d1d1;
+    margin-left: 185px;
+    margin-bottom: 0px;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
